@@ -89,7 +89,7 @@ copy bitmxittzd:
 
     cp bitmxittzd /usr/bin
 
-start bitmxittzd and enter .bitmxittz:
+start bitmxittz server and enter .bitmxittz:
 
     bitmxittzd & cd ~/.bitmxittz
 
