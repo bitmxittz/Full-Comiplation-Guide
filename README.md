@@ -121,7 +121,7 @@ add following lines to bitmxittz.conf, change YOUR_RPC_USERNAME and YOUR_STRONG_
     addnode=nd4.bitmxittz.com
     addnode=nd5.bitmxittz.com
 
-to save and exit, if using nano press cntr+O then cntl+x, if using vim press Esc :wq hit "Enter".
+to save and exit, if using nano press "cntr+O" then press "cntl+x", if using vim press "Esc" type ":wq" hit "Enter".
 
 home:
 
