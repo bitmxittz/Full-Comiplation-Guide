@@ -1,7 +1,9 @@
 # Full-Comiplation-Guide
-Bitmxittz BMXT wallet compilation guide for windows and linux
 
-Compile Bitmxittz QT wallet or Daemon on windows, linux
+Bitmxittz BMXT wallet full compilation guide for windows and linux
+
+Wallet Compilation
+------------------
 
 ### Compile Daemon on Linux
 
