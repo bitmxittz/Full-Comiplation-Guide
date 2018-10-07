@@ -35,7 +35,7 @@ Add this at the bottom of /etc/fstab:
 
 To edit, press "Insert" if you using vim
 
-To save and exit, if using nano press "cntr+O" then "cntl+x", if using vim press "Esc" type ":wq" hit "Enter"
+To save and exit, if using nano press "cntr+O" then "cntl+x", if using vim press "Esc" type ":wq" then hit "Enter"
 
 install libs:
 
@@ -121,7 +121,7 @@ add following lines to bitmxittz.conf, change YOUR_RPC_USERNAME and YOUR_STRONG_
     addnode=nd4.bitmxittz.com
     addnode=nd5.bitmxittz.com
 
-if using nano cntr+O then cntl+x, if using vim Esc :wq Enter, to save and exit.
+to save and exit, if using nano press cntr+O then cntl+x, if using vim press Esc :wq hit "Enter".
 
 home:
 
