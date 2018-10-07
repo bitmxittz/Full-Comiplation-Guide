@@ -29,7 +29,9 @@ Or use vim to edit
 
     vim /etc/fstab
 
-Add this at the bottom of /etc/fstab: /swapfile none swap sw 0 0
+Add this at the bottom of /etc/fstab:
+
+    /swapfile none swap sw 0 0
 
 To edit, press "Insert" if you using vim
 
