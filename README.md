@@ -29,8 +29,6 @@ command line:
     
 Or use vim
 
-command line:
-
     vim /etc/fstab
 
 Add this at the bottom of /etc/fstab: /swapfile none swap sw 0 0
@@ -79,10 +77,7 @@ command line:
 
     make STATIC=1 -f makefile.unix bitmxittzd  
 
--or-  
-
-
-command line:
+-or-
 
     make -f makefile.unix bitmxittzd
 
@@ -102,15 +97,13 @@ command line:
 
     nano bitmxittz.conf 
 
-or 
-
-command line:
+or
 
     vim bitmxittz.conf
 
 Edit following lines, change YOUR_RPC_USERNAME and YOUR_STRONG_PASSWORD with your own
 
-command line:
+lines:
 
     rpcuser=YOUR_RPC_USERNAME
     rpcpassword=YOUR_STRONG_PASSWORD
