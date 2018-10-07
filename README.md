@@ -9,25 +9,25 @@ Wallet Compilation
 
 use "sudo" before command line if you are not root user
 
-command line:
+update:
 
     apt-get update
 
-command line:
+upgrade:
 
     apt-get upgrade
 
 If low on RAM
 
-command line:
+swapfile:
 
     dd if=/dev/zero of=/swapfile bs=1024 count=1024288
 
-command line:
+edit fstab:
 
     nano /etc/fstab
     
-Or use vim
+Or use vim to edit
 
     vim /etc/fstab
 
@@ -41,69 +41,67 @@ command line:
 
     apt-get install ntp unzip git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev aptitude && aptitude install miniupnpc libminiupnpc-dev
 
-command line:
+clone git src:
 
     git clone https://github.com/bitmxittz/Bitmxittz
 
-command line:
+enter leveldb:
 
     cd Bitmxittz/src/leveldb
 
-command line:
+grant permission:
 
     chmod 0755 build_detect_platform
 
-command line:
+make clean:
 
     make clean
 
-command line:
+make leveldb:
 
     make libleveldb.a libmemenv.a
 
-command line:
+home:
 
     cd
 
-command line:
+enter src:
 
     cd Bitmxittz/src
 
-command line:
+make clean:
 
     make -f makefile.unix clean
 
-command line:
+compile bitmxittzd static:
 
     make STATIC=1 -f makefile.unix bitmxittzd  
 
--or-
+or compile bitmxittzd non-static:
 
     make -f makefile.unix bitmxittzd
 
-command line:
+trim bitmxittzd:
 
     strip bitmxittzd
 
-command line:
+copy bitmxittzd:
 
     cp bitmxittzd /usr/bin
 
-command line:
+start bitmxittzd and enter .bitmxittz:
 
     bitmxittzd & cd ~/.bitmxittz
 
-command line:
+edit bitmxittz configuration file:
 
     nano bitmxittz.conf 
 
-or
+or use vim to edit
 
     vim bitmxittz.conf
 
-Edit following lines, change YOUR_RPC_USERNAME and YOUR_STRONG_PASSWORD with your own
-
-lines:
+add following lines to bitmxittz.conf, change YOUR_RPC_USERNAME and YOUR_STRONG_PASSWORD with your own:
 
     rpcuser=YOUR_RPC_USERNAME
     rpcpassword=YOUR_STRONG_PASSWORD
@@ -125,19 +123,19 @@ lines:
 
 if using nano cntr+O then cntl+x, if using vim Esc :wq Enter, to save and exit.
 
-command line:
+home:
 
     cd
 
-command line:
+start bitmxittz server:
 
     bitmxittzd
 
-command line:
+getinfo:
 
     bitmxittzd getinfo
 
-command line:
+getpeerinfo:
 
     bitmxittzd getpeerinfo
 
