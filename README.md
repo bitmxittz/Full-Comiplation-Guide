@@ -37,13 +37,13 @@ To edit, press "Insert" if you using vim
 
 To save and exit, if using nano press "cntr+O" then "cntl+x", if using vim press "Esc" type ":wq" hit "Enter"
 
-command line:
+install libs:
 
     apt-get install ntp unzip git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev aptitude && aptitude install miniupnpc libminiupnpc-dev
 
 clone git src:
 
-    git clone https://github.com/bitmxittz/Bitmxittz
+    git clone https://github.com/bitmxittz/Bitmxittz Bitmxittz
 
 enter leveldb:
 
@@ -65,7 +65,7 @@ home:
 
     cd
 
-enter src:
+enter src folder:
 
     cd Bitmxittz/src
 
