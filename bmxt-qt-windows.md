@@ -117,7 +117,7 @@ Your msys output should look like the following code.
     Thread model: posix
     gcc version 4.9.1 (i686-posix-dwarf-rev1, Built by MinGW-W64 project)
 
----------------------------------
+-
 
 #### 2. Download and Install Dependencies
 
@@ -223,7 +223,9 @@ Code:
 
     make
 
-#### Download and Compile QT.
+-
+
+#### Download and Compile QT wallet.
 
 3a. Download and uncompress http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip to C:\Qt\4.8.6. 
 
