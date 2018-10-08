@@ -1,4 +1,4 @@
-Compile And Run Bitmxittz Daemon Wallet On Linux
+## Compile And Run Bitmxittz Daemon Wallet On Linux
 
 
 done...
