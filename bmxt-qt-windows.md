@@ -152,6 +152,52 @@ Code:
     b2 --build-type=complete --with-chrono --with-filesystem --with-program_options --with-system --with-thread toolset=gcc variant=release link=static threading=multi runtime-link=static stage
 
 
+2d. Mini UPNP
+Download and extract MiniUPNP http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.9.20140911.tar.gz to your deps folder. 
+Rename  folder from "miniupnpc-1.9.20140911" to "miniupnpc" then from a Windows command prompt:
+
+Code:
+
+    cd C:\deps\miniupnpc
+    mingw32-make -f Makefile.mingw init upnpc-static
+
+
+2e. Protoc and Libprotobuf:
+Download and extract http://protobuf.googlecode.com/files/protobuf-2.5.0.zip to your deps folder.
+In the msys shell run
+Code:
+    cd /c/deps/protobuf-2.5.0
+    configure --disable-shared
+    make
+
+2f. libpng
+Download and extract http://prdownloads.sourceforge.net/libpng/libpng-1.6.14.tar.gz?download to your deps folder. Extract.
+In msys shell run 
+
+Code:
+
+    cd /c/deps/libpng-1.6.14
+    configure --disable-shared
+    make
+    cp .libs/libpng16.a .libs/libpng.a
+
+2g. qrencode
+Download and extract http://fukuchi.org/works/qrencode/qrencode-3.4.4.tar.gz to your deps folder.
+In msys shell run 
+
+Code:
+
+    cd /c/deps/qrencode-3.4.4
+
+    LIBS="../libpng-1.6.14/.libs/libpng.a ../../mingw32/i686-w64-mingw32/lib/libz.a" \
+    png_CFLAGS="-I../libpng-1.6.14" \
+    png_LIBS="-L../libpng-1.6.14/.libs" \
+    configure --enable-static --disable-shared --without-tools
+
+    make
+
+
+
 
 
 
