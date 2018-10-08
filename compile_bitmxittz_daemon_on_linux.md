@@ -1,4 +1,4 @@
-### Compile Daemon on Linux
+### Compile And Run Bitmxittz Daemon Wallet On Linux
 
 use "sudo" before command line if you are not root user
 
