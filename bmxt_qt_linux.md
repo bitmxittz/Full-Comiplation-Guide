@@ -62,5 +62,7 @@ make release:
     
 done, now you can open wallet configure bitmxittz.conf and run qt wallet on linux.
 
+https://bitmxittz.com/license/
 
+https://bitmxittz.mit-license.org/
 
