@@ -105,7 +105,6 @@ add following lines to bitmxittz.conf, change YOUR_RPC_USERNAME and YOUR_STRONG_
     server=1
     listen=1
     testnet=0
-    txindex=1
     timeout=30000
     rpctimeout=30000
     addnode=nd1.bitmxittz.com
