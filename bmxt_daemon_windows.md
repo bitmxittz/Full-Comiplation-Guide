@@ -24,11 +24,11 @@ f. Libpng
 
 g. qrencode
 
-#### 3. Download and Compile QT
+#### 3. Download Source and Compile Daemon
 
-a. download and compile qt
+a. download bitmxittz github source
 
-b. compile bitmxittz qt wallet
+b. compile bitmxittz daemon for windows
 
 ---------------------------------------------------------------------------
 
@@ -225,11 +225,110 @@ Code:
 
 -
 
-#### Download Source and Compile Windows Daemon.
+#### 3. Download Source and Compile Windows Daemon.
+
+3a. Download and extract the Bitmxittz source. 
+
+https://github.com/bitmxittz/Bitmxittz.
+
+remeber by default some files will be locked by your computer since files come from another computer.
+to unlock a file you have to goto properties of file by right clicking on a file and unblock manually which will take hours, to unlock all files at once just compress Bitmxittz folder and send to another local device send it back to first device and unzip (works on most operating systems).
 
 
+3b. Compile bitmxittzd.exe for windows
+
+Navigate to  C:\Bitmxittz\src\makefile.mingw and open with your text editor.
+
+Code:
+
+    USE_UPNP:=-
+    USE_IPV6:=1
+    
+    DEPSDIR?=/usr/local
+    BOOST_SUFFIX?=-mgw46-mt-sd-1_52
+    
+    INCLUDEPATHS= \
+     -I"$(CURDIR)" \
+     -I"$(DEPSDIR)/include"
+
+    LIBPATHS= \
+     -L"$(CURDIR)/leveldb" \
+     -L"$(DEPSDIR)/lib"
+    
+    LIBS= \
+     -l leveldb \
+     -l memenv \
+     -l boost_system$(BOOST_SUFFIX) \
+     -l boost_filesystem$(BOOST_SUFFIX) \
+     -l boost_program_options$(BOOST_SUFFIX) \
+     -l boost_thread$(BOOST_SUFFIX) \
+     -l boost_chrono$(BOOST_SUFFIX) \
+     -l db_cxx \
+     -l ssl \
+     -l crypto
+    
+    DEFS=-D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -DBOOST_SPIRIT_THREADSAFE
+    DEBUGFLAGS=-g
+    CFLAGS=-mthreads -O2 -w -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter $(DEBUGFLAGS) $(DEFS) $(INCLUDEPATHS)
+    # enable: ASLR, DEP and large address aware
+    LDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat -Wl,--large-address-aware
+
+to
+
+Code:
+
+    USE_UPNP:=1
+    USE_IPV6:=1
+    
+    DEPSDIR?=/usr/local
+    BOOST_SUFFIX?=-mgw49-mt-s-1_55
+    
+    INCLUDEPATHS= \
+     -I"$(CURDIR)" \
+     -I"/c/deps/boost_1_55_0" \
+     -I"/c/deps" \
+     -I"/c/deps/db-4.8.30.NC/build_unix" \
+     -I"/c/deps/openssl-1.0.1j/include"
+     
+    LIBPATHS= \
+     -L"$(CURDIR)/leveldb" \
+     -L"/c/deps/boost_1_55_0/stage/lib" \
+     -L"/c/deps/miniupnpc" \
+     -L"/c/deps/db-4.8.30.NC/build_unix" \
+     -L"/c/deps/openssl-1.0.1j"
+    
+    LIBS= \
+     -l leveldb \
+     -l memenv \
+     -l boost_system$(BOOST_SUFFIX) \
+     -l boost_filesystem$(BOOST_SUFFIX) \
+     -l boost_program_options$(BOOST_SUFFIX) \
+     -l boost_thread$(BOOST_SUFFIX) \
+     -l boost_chrono$(BOOST_SUFFIX) \
+     -l db_cxx \
+     -l ssl \
+     -l crypto
+    
+    DEFS=-D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -DBOOST_SPIRIT_THREADSAFE
+    DEBUGFLAGS=-g
+    CFLAGS=-mthreads -O2 -w -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter $(DEBUGFLAGS) $(DEFS) $(INCLUDEPATHS)
+    # enable: ASLR, DEP and large address aware
+    LDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat -Wl,--large-address-aware -static
+
+We change the deps to point to the deps we created earlier. If you chose to place your deps in a different folder, change the code to point to your folders. We also  -static to LDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat -Wl,--large-address-aware -static for static linked exe,  updated UPNP Includes and Lib paths to enable UPNP.
+
+In the Msys shell, you can now compile bitmxittzd.
+
+Code:
+
+    cd /c/Bitmxittz/src
+
+    make -f makefile.mingw
+
+    strip bitmxittzd.exe
 
 
+## License
 
 https://bitmxittz.com/license/
 
