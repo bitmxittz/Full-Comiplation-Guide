@@ -117,8 +117,9 @@ Your msys output should look like the following code.
     Thread model: posix
     gcc version 4.9.1 (i686-posix-dwarf-rev1, Built by MinGW-W64 project)
 
+---------------------------------
 
-#### Download and Install Dependencies
+#### 2. Download and Install Dependencies
 
 Create a deps folder at C:\deps.  If you want to cheat you can download the pre-built dependencies here http://www.mediafire.com/download/y89546s65sf8de5/deps.zip, though it is recommended to build your own.
 
