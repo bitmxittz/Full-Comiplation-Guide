@@ -12,21 +12,21 @@ See COPYING for more information https://bitmxittz.mit-license.org/ or see http:
 Wallet Compilation
 ------------------
 
-### Compile Daemon on Linux
+### Compile Bitmxittz Daemon on Linux
 
 see https://github.com/bitmxittz/Full-Comiplation-Guide/blob/master/bmxt_daemon_linux.md
 
 
-### Compile QT wallet on Linux
+### Compile Bitmxittz QT wallet on Linux
 
 see https://github.com/bitmxittz/Full-Comiplation-Guide/blob/master/bmxt_qt_linux.md
 
 
-### Compile Daemon on Windows
+### Compile Bitmxittz Daemon on Windows
 
 see https://github.com/bitmxittz/Full-Comiplation-Guide/blob/master/bmxt_daemon_windows.md
 
-### Compile QT wallet on Windows
+### Compile Bitmxittz QT wallet on Windows
 
 see https://github.com/bitmxittz/Full-Comiplation-Guide/blob/master/bmxt-qt-windows.md
 
