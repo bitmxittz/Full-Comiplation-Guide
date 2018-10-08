@@ -281,7 +281,7 @@ Code:
 
 Your Bitmxittz qt should now be available in your C:\Bitmxittz\release folder after around 5 minutes depends on your computer speed.
 
-Now copy bitmxittz-qt.exe to your desired folder and run, now goto C:\Users\YOUR_PC_USERNAME\AppData\Roaming and create file bitmxittz.conf and edit following lines, create bitmxittz.txt file with text editor and save as bitmxittz.conf or download bitmxittz.conf here https://mega.nz/#!sGxgAAIb!U4KQSI44avDERH9rIg437p_4xTEGo6w8KCKhfWe6Dk8.
+Now copy bitmxittz-qt.exe to your desired folder and run, now goto C:\Users\YOUR_PC_USERNAME\AppData\Roaming and create file bitmxittz.conf and edit following lines, create bitmxittz.txt file with text editor and save as bitmxittz.conf or download bitmxittz.conf here https://mega.nz/#!oCIHwC7T!iEr-rmEny0P61s_wqP6cv-FFNOuitkRC2HVdkt37pho.
 
     rpcuser=YOUR_RPC_USER
     rpcpassword=YOUR_STRONG_RPC_PASSWORD
