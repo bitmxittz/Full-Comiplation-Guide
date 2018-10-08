@@ -1,6 +1,6 @@
 ## Compile And Run Bitmxittz Qt Wallet On Linux
 
-Pre Installers.
+#### Pre Installers.
 
 1. Winrar
 
