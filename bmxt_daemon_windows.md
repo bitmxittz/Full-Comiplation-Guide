@@ -1,4 +1,4 @@
-## Compile And Run Bitmxittz Daemon Wallet On Linux
+## Compile And Run Bitmxittz Daemon Wallet On Windows
 
 #### 1. Pre Installers
 
@@ -273,7 +273,7 @@ Code:
     # enable: ASLR, DEP and large address aware
     LDFLAGS=-Wl,--dynamicbase -Wl,--nxcompat -Wl,--large-address-aware
 
-to
+change to
 
 Code:
 
