@@ -26,9 +26,9 @@ g. qrencode
 
 #### 3. Download and Compile QT
 
-a. download github source code
+a. download and compile qt
 
-b. compile qt wallet
+b. compile bitmxittz qt wallet
 
 
 
@@ -198,7 +198,7 @@ Code:
 
 #### Download and Compile QT.
 
-Download and uncompress http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip to C:\Qt\4.8.6. Once again check it resides in C:\Qt\4.8.6 not C:\Qt\4.8.6\4.8.6. Due to a bug in 4.8.6 you will need to apply the patch available here. For those who can't find or work it out, you need to change the following lines in C:\Qt\4.8.6\tools\configure\configureapp.cpp or download the patched file here and replace it in C:\Qt\4.8.6\tools\configure\configureapp.cpp
+3a. Download and uncompress http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip to C:\Qt\4.8.6. Once again check it resides in C:\Qt\4.8.6 not C:\Qt\4.8.6\4.8.6. Due to a bug in 4.8.6 you will need to apply the patch available here. For those who can't find or work it out, you need to change the following lines in C:\Qt\4.8.6\tools\configure\configureapp.cpp or download the patched file here and replace it in C:\Qt\4.8.6\tools\configure\configureapp.cpp
 
 Code:
 
@@ -215,6 +215,36 @@ Code:
     configure -release -opensource -confirm-license -static -no-sql-sqlite -no-qt3support -no-opengl -qt-zlib -no-gif -qt-libpng -qt-libmng -no-libtiff -qt-libjpeg -no-dsp -no-vcproj -no-openssl -no-dbus -no-phonon -no-phonon-backend -no-multimedia -no-audio-backend -no-webkit -no-script -no-scripttools -no-declarative -no-declarative-debug -qt-style-windows -qt-style-windowsxp -qt-style-windowsvista -no-style-plastique -no-style-cleanlooks -no-style-motif -no-style-cde -nomake demos -nomake examples
     mingw32-make
 
+3b. Download and extract the Bitmxittz source. 
+
+https://github.com/bitmxittz/Bitmxittz.
+
+remeber by default some files will be blocked by your computer since files come from another computer.
+to unblock a file you have to goto properties of file by right clicking on a file and unblock manually which will take hours, to unblock all files at once just compress source file and send to another local device send it back to first device and unzip (works on most operating systems).
+
+
+#### Compiling Bitmxittz Windows QT.
+
+Create libleveldb.a and libmemenv.a.
+Using Msys shell, run.
+
+Code:
+
+    cd /C/Bitmxittz/src/leveldb
+    TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a
+    
+If the file already exists, Msys will inform you so.
+
+Now from a the Windows cmd, run  
+
+Code:
+
+    set PATH=%PATH%;C:\Qt\4.8.6\bin
+    cd C:\Bitmxittz\
+    qmake "USE_QRCODE=1" "USE_UPNP=1" "USE_IPV6=1" bitmxittz-qt.pro
+    mingw32-make -f Makefile.Release
+
+Your Bitmxittz qt should now be available in your C:\Bitmxittz\release folder after around 5 minutes depends on your computer speed.
 
 
 
