@@ -27,3 +27,8 @@ see https://github.com/bitmxittz/Full-Comiplation-Guide/blob/master/bmxt_qt_linu
 
 ### Compile QT wallet on Windows
 
+
+
+https://bitmxittz.com/license/
+
+https://bitmxittz.mit-license.org/
