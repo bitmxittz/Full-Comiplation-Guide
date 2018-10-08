@@ -308,11 +308,11 @@ Close bitmxittz-qt wallet and restart after few minutes, your wallet will be con
 
 ------------------------------
 
-#### Bitmxittz-Qt For Windows
+# Download For Windows
 
-download windows wallet bitmxittz-Qt v1.0.0.1 https://mega.nz/#!RS4zFY7J!KXNQrPhWnxoF6F1BGyB74PS-3oGctsFq41OCfL-z4F4
+bitmxittz-qt v1.0.0.1 https://mega.nz/#!RS4zFY7J!KXNQrPhWnxoF6F1BGyB74PS-3oGctsFq41OCfL-z4F4
 
-download windows wallet bitmxittz-Qt v1.0.0.2 https://mega.nz/#!JX5hxa4b!nSJ6RSQhonvhQjp5ckK2FP262I4-WVsPN1tkfcULokE
+bitmxittz-Qt v1.0.0.2 https://mega.nz/#!JX5hxa4b!nSJ6RSQhonvhQjp5ckK2FP262I4-WVsPN1tkfcULokE
 
 
 # License
