@@ -134,6 +134,16 @@ getpeerinfo:
 
 done...
 
+--------------------
+
+## Download For Linux
+
+bitmxittzd v1.0.0.1 https://mega.nz/#!BWxxVD7J!GOFYNhRbUCWury8mv0OC2H7CRBeWhUtvn-AF-ZCnm-U
+
+bitmxittzd v1.0.0.2 https://mega.nz/#!BWxxVD7J!GOFYNhRbUCWury8mv0OC2H7CRBeWhUtvn-AF-ZCnm-U
+
+## License
+
 https://bitmxittz.com/license/
 
 https://bitmxittz.mit-license.org/
