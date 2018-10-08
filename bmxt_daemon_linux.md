@@ -191,7 +191,7 @@ result something like this:
 Done, bitmxittzd successfully compiled and running on linux server...
 
 #### Note:
-without make clean or sufficient permissions it may throw g++ error
+Without make clean or sufficient permissions it may throw g++ error, try to compile STATIC=1 at first.
 
 --------------------
 
