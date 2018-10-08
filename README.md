@@ -25,9 +25,10 @@ see https://github.com/bitmxittz/Full-Comiplation-Guide/blob/master/bmxt_qt_linu
 ### Compile Daemon on Windows
 
 
+
 ### Compile QT wallet on Windows
 
-
+https://github.com/bitmxittz/Full-Comiplation-Guide/blob/master/bmxt-qt-windows.md
 
 https://bitmxittz.com/license/
 
