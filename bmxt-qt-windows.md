@@ -196,6 +196,25 @@ Code:
 
     make
 
+#### Download and Compile QT.
+
+Download and uncompress http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip to C:\Qt\4.8.6. Once again check it resides in C:\Qt\4.8.6 not C:\Qt\4.8.6\4.8.6. Due to a bug in 4.8.6 you will need to apply the patch available here. For those who can't find or work it out, you need to change the following lines in C:\Qt\4.8.6\tools\configure\configureapp.cpp or download the patched file here and replace it in C:\Qt\4.8.6\tools\configure\configureapp.cpp
+
+Code:
+
+    2180  |  -  const QString mingwPath = dictionary["QMAKESPEC"].endsWith("-g++") ?
+    2180  |  +  const QString mingwPath = dictionary["QMAKESPEC"].contains("-g++") ?
+    2252  |   -  if (dictionary["QMAKESPEC"].endsWith("-g++")+
+    2252  |  +  if (dictionary["QMAKESPEC"].contains("-g++")+
+
+From your Windows command prompt run 
+
+Code:
+
+    cd C:\Qt\4.8.6
+    configure -release -opensource -confirm-license -static -no-sql-sqlite -no-qt3support -no-opengl -qt-zlib -no-gif -qt-libpng -qt-libmng -no-libtiff -qt-libjpeg -no-dsp -no-vcproj -no-openssl -no-dbus -no-phonon -no-phonon-backend -no-multimedia -no-audio-backend -no-webkit -no-script -no-scripttools -no-declarative -no-declarative-debug -qt-style-windows -qt-style-windowsxp -qt-style-windowsvista -no-style-plastique -no-style-cleanlooks -no-style-motif -no-style-cde -nomake demos -nomake examples
+    mingw32-make
+
 
 
 
