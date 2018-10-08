@@ -1,5 +1,7 @@
 # Full-Comiplation-Guide
 
+## Bitmxittz BMXT
+
 Bitmxittz BMXT wallet full compilation guide for windows and linux.
 
 Bitmxittz is released under the terms of the MIT license.
