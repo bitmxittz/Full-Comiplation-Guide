@@ -111,6 +111,11 @@ Your msys output should look like the following code.
     gcc version 4.9.1 (i686-posix-dwarf-rev1, Built by MinGW-W64 project)
 
 
+1c. Download and Install Dependencies
+
+Create a deps folder at C:\deps.  If you want to cheat you can download the pre-built dependencies here http://www.mediafire.com/download/y89546s65sf8de5/deps.zip, though it is recommended to build your own.
+
+
 
 
 https://bitmxittz.com/license/
