@@ -424,6 +424,13 @@ Bitmxittz daemon compiled successfully running on windows now.
 
 ------------------------------
 
+# Download For Windows
+
+bitmxittzd v1.0.0.1 https://mega.nz/#!wKB0SSIY!3MdjzX6kDQ-BGh4MxizzdeMzFYuCoJgMjI7nc5F7thI
+
+bitmxittzd v1.0.0.2 https://mega.nz/#!MSAgkCBS!gOJzUaRAK4ELVREy3IJ3W52rgTsyGBx1WZfDyXjMQ3w
+
+
 ## License
 
 https://bitmxittz.com/license/
