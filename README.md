@@ -150,11 +150,13 @@ upgrade:
 
     apt-get upgrade
 
-dd if=/dev/zero of=/swapfile bs=1024 count=1024288
+swapfile for low RAM:
 
-Add this at the bottom of nano /etc/fstab: /swapfile none swap sw 0 0
+    dd if=/dev/zero of=/swapfile bs=1024 count=1024288
 
-    nano /etc/fstab
+Add following line at the bottom of nano /etc/fstab: 
+
+    /swapfile none swap sw 0 0
 
 libs:
 
