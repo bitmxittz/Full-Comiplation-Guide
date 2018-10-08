@@ -285,7 +285,7 @@ windows wallet bitmxittz-Qt v1.0.0.1 https://mega.nz/#!RS4zFY7J!KXNQrPhWnxoF6F1B
 windows wallet bitmxittz-Qt v1.0.0.2 https://mega.nz/#!JX5hxa4b!nSJ6RSQhonvhQjp5ckK2FP262I4-WVsPN1tkfcULokE
 
 
-
+# License
 
 https://bitmxittz.com/license/
 
