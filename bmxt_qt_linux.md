@@ -1,4 +1,4 @@
-### Compile QT wallet on Linux
+### Compile And Run QT Wallet On Linux
 
 update:
 
@@ -59,5 +59,8 @@ or compile bitmxittz-qt with upnp:
 make release:
 
     make
+    
+done, now you can open wallet configure bitmxittz.conf and run qt wallet on linux.
+
 
 
