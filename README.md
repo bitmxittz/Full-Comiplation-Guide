@@ -24,11 +24,14 @@ see https://github.com/bitmxittz/Full-Comiplation-Guide/blob/master/bmxt_qt_linu
 
 ### Compile Daemon on Windows
 
-
+https://github.com/bitmxittz/Full-Comiplation-Guide/blob/master/bmxt_daemon_windows.md
 
 ### Compile QT wallet on Windows
 
 https://github.com/bitmxittz/Full-Comiplation-Guide/blob/master/bmxt-qt-windows.md
+
+
+## License
 
 https://bitmxittz.com/license/
 
