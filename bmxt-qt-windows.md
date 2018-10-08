@@ -118,6 +118,7 @@ Create a deps folder at C:\deps.  If you want to cheat you can download the pre-
 2a. OpenSLL- Install OpenSSL dependencies on Windows.
 Download the latest version of OpenSSL https://www.openssl.org/source/openssl-1.0.1j.tar.gz to your deps folder.
 Open the MinGW shell at C:\MinGW\msys\1.0\msys.bat 
+
 Code:
 
     cd /c/deps/
@@ -126,15 +127,31 @@ Code:
     ./Configure no-zlib no-shared no-dso no-krb5 no-camellia no-capieng no-cast no-cms no-dtls1 no-gost no-gmp no-heartbeats no-idea no-jpake no-md2 no-mdc2 no-rc5 no-rdrand no-rfc3779 no-rsax no-sctp no-seed no-sha0 no-static_engine no-whirlpool no-rc2 no-rc4 no-ssl2 no-ssl3 mingw
     make
 
+
 2b. Berkeley DB
 Download http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz and place in your deps folder.
 In the MinGW shell use the following code.
+
 Code:
+
     cd /c/deps/
     tar xvfz db-4.8.30.NC.tar.gz
     cd db-4.8.30.NC/build_unix
     ../dist/configure --enable-mingw --enable-cxx --disable-shared --disable-replication
     make
+
+
+2c. Boost
+Download Boost to your deps folder. http://sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.zip/download 
+Make sure to download either the 7z or zip versions. Double click on the folder to extract boost_1_55_0 in your deps folder. This may take several minutes depending on your PC's speed. Using the Windows command prompt, bootstrap and compile boost. To bring up the windows command prompt just type cmd in the windows search bar.
+
+Code:
+
+    cd C:\deps\boost_1_55_0\
+    bootstrap.bat mingw
+    b2 --build-type=complete --with-chrono --with-filesystem --with-program_options --with-system --with-thread toolset=gcc variant=release link=static threading=multi runtime-link=static stage
+
+
 
 
 
