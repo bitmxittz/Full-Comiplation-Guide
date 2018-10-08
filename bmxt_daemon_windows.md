@@ -327,6 +327,102 @@ Code:
 
     strip bitmxittzd.exe
 
+Your bitmxittzd.exe should now be available in your C:\Bitmxittz\src folder after around 5 minutes depends on your computer speed.
+
+Now copy bitmxittzd.exe to your desired folder and run, now goto C:\Users\YOUR_PC_USERNAME\AppData\Roaming and create file bitmxittz.conf and edit following lines, create bitmxittz.txt file with text editor and save as bitmxittz.conf or download bitmxittz.conf here https://mega.nz/#!oCIHwC7T!iEr-rmEny0P61s_wqP6cv-FFNOuitkRC2HVdkt37pho.
+
+    rpcuser=YOUR_RPC_USER
+    rpcpassword=YOUR_STRONG_RPC_PASSWORD
+    rpcallowip=127.0.0.1
+    port=14433
+    rpcport=14432
+    server=1
+    listen=1
+    daemon=1
+    upnp=1
+    ipv6=1
+    rescan=0
+    testnet=0
+    timeout=30000
+    rpctimeout=30000
+    addnode=nd1.bitmxittz.com
+    addnode=nd2.bitmxittz.com
+    addnode=nd3.bitmxittz.com
+    addnode=nd4.bitmxittz.com
+    addnode=nd5.bitmxittz.com
+    
+Close bitmxittzd.exe from cmd and restart after few seconds, your wallet will be connected and start synchronising.
+
+From cmd
+
+code:
+
+    bitmxittzd getinfo
+
+result:
+
+    {
+    "version" : 1000001,
+    "protocolversion" : 70002,
+    "walletversion" : 60000,
+    "balance" : 0.00000000,
+    "blocks" : 517676,
+    "timeoffset" : 0,
+    "connections" : 7,
+    "proxy" : "",
+    "difficulty" : 0.01117768,
+    "testnet" : false,
+    "keypoololdest" : 1532705430,
+    "keypoolsize" : 101,
+    "paytxfee" : 0.00000000,
+    "mininput" : 0.00001000,
+    "errors" : ""
+    }
+
+From cmd
+
+code:
+
+    bitmxittzd getpeerinfo
+
+result something like this:
+
+        {
+        "addr" : "124.00.00.00:14433",
+        "services" : "00000003",
+        "lastsend" : 1538997812,
+        "lastrecv" : 1538997812,
+        "bytessent" : 647290,
+        "bytesrecv" : 140019,
+        "blocksrequested" : 2234,
+        "conntime" : 1538943919,
+        "version" : 70002,
+        "subver" : "/Satoshi:1.0.0.1/",
+        "inbound" : true,
+        "startingheight" : 514970,
+        "banscore" : 0
+    },
+    {
+        "addr" : "82.00.000.00:14433",
+        "services" : "00000003",
+        "lastsend" : 1538997812,
+        "lastrecv" : 1538997758,
+        "bytessent" : 131833,
+        "bytesrecv" : 51474,
+        "blocksrequested" : 404,
+        "conntime" : 1538984702,
+        "version" : 70002,
+        "subver" : "/Satoshi:1.0.0.2/",
+        "inbound" : true,
+        "startingheight" : 516951,
+        "banscore" : 0
+    }
+
+
+Bitmxittz daemon compiled successfully running on windows now.
+
+
+------------------------------
 
 ## License
 
