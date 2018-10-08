@@ -111,9 +111,30 @@ Your msys output should look like the following code.
     gcc version 4.9.1 (i686-posix-dwarf-rev1, Built by MinGW-W64 project)
 
 
-1c. Download and Install Dependencies
+#### Download and Install Dependencies
 
 Create a deps folder at C:\deps.  If you want to cheat you can download the pre-built dependencies here http://www.mediafire.com/download/y89546s65sf8de5/deps.zip, though it is recommended to build your own.
+
+2a. OpenSLL- Install OpenSSL dependencies on Windows.
+Download the latest version of OpenSSL https://www.openssl.org/source/openssl-1.0.1j.tar.gz to your deps folder.
+Open the MinGW shell at C:\MinGW\msys\1.0\msys.bat 
+Code:
+
+    cd /c/deps/
+    tar xvfz openssl-1.0.1j.tar.gz
+    cd openssl-1.0.1j
+    ./Configure no-zlib no-shared no-dso no-krb5 no-camellia no-capieng no-cast no-cms no-dtls1 no-gost no-gmp no-heartbeats no-idea no-jpake no-md2 no-mdc2 no-rc5 no-rdrand no-rfc3779 no-rsax no-sctp no-seed no-sha0 no-static_engine no-whirlpool no-rc2 no-rc4 no-ssl2 no-ssl3 mingw
+    make
+
+2b. Berkeley DB
+Download http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz and place in your deps folder.
+In the MinGW shell use the following code.
+Code:
+    cd /c/deps/
+    tar xvfz db-4.8.30.NC.tar.gz
+    cd db-4.8.30.NC/build_unix
+    ../dist/configure --enable-mingw --enable-cxx --disable-shared --disable-replication
+    make
 
 
 
