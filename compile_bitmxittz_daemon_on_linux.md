@@ -132,7 +132,7 @@ getpeerinfo:
 
     bitmxittzd getpeerinfo
 
-done
+done...
 
 https://bitmxittz.com/license/
 
