@@ -281,6 +281,32 @@ Code:
 
 Your Bitmxittz qt should now be available in your C:\Bitmxittz\release folder after around 5 minutes depends on your computer speed.
 
+Now copy bitmxittz-qt.exe to your desired folder and run, now goto C:\Users\YOUR_PC_USERNAME\AppData\Roaming and create file bitmxittz.conf and edit following lines, create bitmxittz file with text editor and save as bitmxittz.conf.
+
+    rpcuser=YOUR_RPC_USER
+    rpcpassword=YOUR_STRONG_RPC_PASSWORD
+    rpcallowip=127.0.0.1
+    port=14433
+    rpcport=14432
+    server=1
+    listen=1
+    daemon=1
+    upnp=1
+    ipv6=1
+    rescan=0
+    testnet=0
+    timeout=30000
+    rpctimeout=30000
+    addnode=nd1.bitmxittz.com
+    addnode=nd2.bitmxittz.com
+    addnode=nd3.bitmxittz.com
+    addnode=nd4.bitmxittz.com
+    addnode=nd5.bitmxittz.com
+    
+Close bitmxittz-qt wallet and restart after few minutes, your wallet will be connected and start synchronising now.
+
+
+------------------------------
 
 #### Windows wallets, bitmxittz-qt v1.0.0.1 and v1.0.0.2 
 
