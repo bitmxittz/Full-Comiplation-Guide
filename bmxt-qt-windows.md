@@ -52,7 +52,9 @@ http://www.sublimetext.com/
 
 http://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download
 
-Double click to install, keep the checkbox for the GUI checked and make sure to install in C:\MinGW. Press continue. From the MinGW GUI interface, go to all packages -> MYSYS
+Double click to install, keep the checkbox for the GUI checked and make sure to install in C:\MinGW. Press continue. 
+
+From the MinGW GUI interface, go to all packages -> MYSYS
 
 Right click on the following installations and mark for installation.
 
@@ -73,13 +75,17 @@ Download and extract mingw32 to C:\mingw32
 
 http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/4.9.1/theads-posix/dwarf/i686-4.9.1-release-posix-dwarf-rt_v3-rev1.7z/download
 
-You now need to change the path variables. Go to control panel->system and security->system. Click on advanced system properties->environmental variables. In the top box navigate to PATH and change to
+You now need to change the path variables. Go to control panel->system and security->system. Click on advanced system properties->environmental variables. 
+
+In the top box navigate to PATH and change to
 
 code:
 
     C:\mingw32\bin;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\
     
-Checking your MingW install. To start the MingW app navigate to C:\MinGW\msys\1.0\msys.bat, create a desktop shortcut as you will use the msys command as well as the windows command prompts. Double click to start and enter the following to display the version and correct paths.
+Checking your MingW install. To start the MingW app navigate to C:\MinGW\msys\1.0\msys.bat, create a desktop shortcut as you will use the msys command as well as the windows command prompts. 
+
+Double click to start and enter the following to display the version and correct paths.
 
 Code:
 
@@ -117,6 +123,7 @@ Create a deps folder at C:\deps.  If you want to cheat you can download the pre-
 
 2a. OpenSLL- Install OpenSSL dependencies on Windows.
 Download the latest version of OpenSSL https://www.openssl.org/source/openssl-1.0.1j.tar.gz to your deps folder.
+
 Open the MinGW shell at C:\MinGW\msys\1.0\msys.bat 
 
 Code:
@@ -130,6 +137,7 @@ Code:
 
 2b. Berkeley DB
 Download http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz and place in your deps folder.
+
 In the MinGW shell use the following code.
 
 Code:
@@ -142,8 +150,15 @@ Code:
 
 
 2c. Boost
+
 Download Boost to your deps folder. http://sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.zip/download 
-Make sure to download either the 7z or zip versions. Double click on the folder to extract boost_1_55_0 in your deps folder. This may take several minutes depending on your PC's speed. Using the Windows command prompt, bootstrap and compile boost. To bring up the windows command prompt just type cmd in the windows search bar.
+Make sure to download either the 7z or zip versions. 
+
+Double click on the folder to extract boost_1_55_0 in your deps folder. This may take several minutes depending on your PC's speed. 
+
+Using the Windows command prompt, bootstrap and compile boost. 
+
+To bring up the windows command prompt just type cmd in the windows search bar.
 
 Code:
 
@@ -153,7 +168,9 @@ Code:
 
 
 2d. Mini UPNP
+
 Download and extract MiniUPNP http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.9.20140911.tar.gz to your deps folder. 
+
 Rename  folder from "miniupnpc-1.9.20140911" to "miniupnpc" then from a Windows command prompt:
 
 Code:
@@ -163,15 +180,21 @@ Code:
 
 
 2e. Protoc and Libprotobuf:
+
 Download and extract http://protobuf.googlecode.com/files/protobuf-2.5.0.zip to your deps folder.
+
 In the msys shell run
+
 Code:
+
     cd /c/deps/protobuf-2.5.0
     configure --disable-shared
     make
 
 2f. libpng
-Download and extract http://prdownloads.sourceforge.net/libpng/libpng-1.6.14.tar.gz?download to your deps folder. Extract.
+
+Download and extract http://prdownloads.sourceforge.net/libpng/libpng-1.6.14.tar.gz?download to your deps folder and extract.
+
 In msys shell run 
 
 Code:
@@ -182,7 +205,9 @@ Code:
     cp .libs/libpng16.a .libs/libpng.a
 
 2g. qrencode
+
 Download and extract http://fukuchi.org/works/qrencode/qrencode-3.4.4.tar.gz to your deps folder.
+
 In msys shell run 
 
 Code:
@@ -198,7 +223,11 @@ Code:
 
 #### Download and Compile QT.
 
-3a. Download and uncompress http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip to C:\Qt\4.8.6. Once again check it resides in C:\Qt\4.8.6 not C:\Qt\4.8.6\4.8.6. Due to a bug in 4.8.6 you will need to apply the patch available here. For those who can't find or work it out, you need to change the following lines in C:\Qt\4.8.6\tools\configure\configureapp.cpp or download the patched file here and replace it in C:\Qt\4.8.6\tools\configure\configureapp.cpp
+3a. Download and uncompress http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.zip to C:\Qt\4.8.6. 
+
+Once again check it resides in C:\Qt\4.8.6 not C:\Qt\4.8.6\4.8.6. Due to a bug in 4.8.6 you will need to apply the patch available here. 
+
+For those who can't find or work it out, you need to change the following lines in C:\Qt\4.8.6\tools\configure\configureapp.cpp or download the patched file here and replace it in C:\Qt\4.8.6\tools\configure\configureapp.cpp
 
 Code:
 
@@ -219,13 +248,14 @@ Code:
 
 https://github.com/bitmxittz/Bitmxittz.
 
-remeber by default some files will be blocked by your computer since files come from another computer.
-to unblock a file you have to goto properties of file by right clicking on a file and unblock manually which will take hours, to unblock all files at once just compress source file and send to another local device send it back to first device and unzip (works on most operating systems).
+remeber by default some files will be locked by your computer since files come from another computer.
+to unlock a file you have to goto properties of file by right clicking on a file and unblock manually which will take hours, to unlock all files at once just compress Bitmxittz folder and send to another local device send it back to first device and unzip (works on most operating systems).
 
 
 #### Compiling Bitmxittz Windows QT.
 
 Create libleveldb.a and libmemenv.a.
+
 Using Msys shell, run.
 
 Code:
@@ -234,6 +264,7 @@ Code:
     TARGET_OS=NATIVE_WINDOWS make libleveldb.a libmemenv.a
     
 If the file already exists, Msys will inform you so.
+
 
 Now from a the Windows cmd, run  
 
@@ -247,6 +278,11 @@ Code:
 Your Bitmxittz qt should now be available in your C:\Bitmxittz\release folder after around 5 minutes depends on your computer speed.
 
 
+#### Windows wallets, bitmxittz-qt v1.0.0.1 and v1.0.0.2 
+
+windows wallet bitmxittz-Qt v1.0.0.1 https://mega.nz/#!RS4zFY7J!KXNQrPhWnxoF6F1BGyB74PS-3oGctsFq41OCfL-z4F4
+
+windows wallet bitmxittz-Qt v1.0.0.2 https://mega.nz/#!JX5hxa4b!nSJ6RSQhonvhQjp5ckK2FP262I4-WVsPN1tkfcULokE
 
 
 
