@@ -30,9 +30,10 @@ a. download and compile qt
 
 b. compile bitmxittz qt wallet
 
+---------------------------------------------------------------------------
 
 
-#### Pre Installers
+#### 1. Pre Installers
 
 1a. File Compressor/Extractor
 
