@@ -128,11 +128,70 @@ getinfo:
 
     bitmxittzd getinfo
 
+
+result:
+
+    {
+    "version" : 1000002,
+    "protocolversion" : 70002,
+    "walletversion" : 60000,
+    "balance" : 0.00000000,
+    "blocks" : 517676,
+    "timeoffset" : 0,
+    "connections" : 7,
+    "proxy" : "",
+    "difficulty" : 0.01117768,
+    "testnet" : false,
+    "keypoololdest" : 1532705430,
+    "keypoolsize" : 101,
+    "paytxfee" : 0.00000000,
+    "mininput" : 0.00001000,
+    "errors" : ""
+    }
+
 getpeerinfo:
 
     bitmxittzd getpeerinfo
 
-done...
+
+result something like this:
+
+        {
+        "addr" : "124.00.00.00:14433",
+        "services" : "00000003",
+        "lastsend" : 1538997812,
+        "lastrecv" : 1538997812,
+        "bytessent" : 647290,
+        "bytesrecv" : 140019,
+        "blocksrequested" : 2234,
+        "conntime" : 1538943919,
+        "version" : 70002,
+        "subver" : "/Satoshi:1.0.0.1/",
+        "inbound" : true,
+        "startingheight" : 514970,
+        "banscore" : 0
+    },
+    {
+        "addr" : "82.00.000.00:14433",
+        "services" : "00000003",
+        "lastsend" : 1538997812,
+        "lastrecv" : 1538997758,
+        "bytessent" : 131833,
+        "bytesrecv" : 51474,
+        "blocksrequested" : 404,
+        "conntime" : 1538984702,
+        "version" : 70002,
+        "subver" : "/Satoshi:1.0.0.2/",
+        "inbound" : true,
+        "startingheight" : 516951,
+        "banscore" : 0
+    }
+
+
+Done, bitmxittzd successfully compiled and running on linux server...
+
+#### Note:
+without make clean or sufficient permissions it may throw g++ error
 
 --------------------
 
