@@ -1,5 +1,7 @@
 ### Compile And Run QT Wallet On Linux
 
+use "sudo" before command line if you are not root user
+
 update:
 
     apt-get update
