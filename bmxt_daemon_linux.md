@@ -30,7 +30,7 @@ To edit, press "Insert" if you using vim
 
 To save and exit, if using nano press "cntr+O" then "cntl+x", if using vim press "Esc" type ":wq" then hit "Enter"
 
-install libs:
+install deps:
 
     apt-get install ntp unzip git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev aptitude && aptitude install miniupnpc libminiupnpc-dev
 
